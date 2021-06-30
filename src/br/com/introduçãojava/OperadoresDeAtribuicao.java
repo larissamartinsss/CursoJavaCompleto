@@ -1,3 +1,5 @@
+package br.com.introduçãojava;
+
 public class OperadoresDeAtribuicao {
     public static void main(String[] args) {
         // =, +=, -=, /=, &=

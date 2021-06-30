@@ -1,3 +1,5 @@
+package br.com.introduçãojava.controlefluxo;
+
 public class ExercicioControleFluxo2 {
     public static void main(String[] args) {
         int dayOfWeek = 1;

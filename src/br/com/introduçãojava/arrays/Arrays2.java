@@ -1,3 +1,5 @@
+package br.com.introduçãojava.arrays;
+
 public class Arrays2 {
     public static void main(String[] args) {
         //valores padrões de inicialização arrays:

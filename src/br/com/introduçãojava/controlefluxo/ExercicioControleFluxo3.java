@@ -1,3 +1,5 @@
+package br.com.introduçãojava.controlefluxo;
+
 public class ExercicioControleFluxo3 {
     public static void main(String[] args) {
         int par = 1000000;
