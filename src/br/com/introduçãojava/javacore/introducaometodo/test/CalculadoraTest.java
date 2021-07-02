@@ -14,7 +14,10 @@ public class CalculadoraTest {
         // System.out.println(calc.divideDoisNumeros(20,2)); Ou:
         double resultado = calc.divideDoisNumeros(20,4);
         System.out.println(resultado);
+        System.out.println("Printing two divide numbers");
+        calc.imprimeDoisNumerosDivididos(20,0);
         System.out.println("Continue");
+
 
     }
 
