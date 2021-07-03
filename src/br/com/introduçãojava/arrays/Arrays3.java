@@ -11,7 +11,7 @@ public class Arrays3 {
 //            System.out.println(numeros2[i]);
 //        }
         // for each observar qual o tipo da var
-        for (int num : numeros2){
+        for (int num : numeros){
             System.out.println(num);
         }
     }

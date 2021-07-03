@@ -28,4 +28,10 @@ public class Calculadora {
         System.out.println("Is not possible divide by 0");
     }
 
+    public void alteraDoisNumeros(int num1, int num2) {
+        num1 = 30;
+        num2 = 40;
+
+    }
+
 }

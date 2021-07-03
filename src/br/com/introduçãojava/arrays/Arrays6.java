@@ -1,6 +1,7 @@
 package br.com.introduçãojava.arrays;
 
-public class Arrays6 {
+public class
+Arrays6 {
     public static void main(String[] args) {
         int [] [] arrInt = new int[3][];
         int [] arrInt2 = new int [3];

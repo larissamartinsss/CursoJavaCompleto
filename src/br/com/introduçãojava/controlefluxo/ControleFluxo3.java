@@ -3,7 +3,7 @@ package br.com.introduçãojava.controlefluxo;
 public class ControleFluxo3 {
     public static void main(String[] args) {
         byte day = 7;
-        // switch just work if there is a char, int, byte, short, enum e string
+        // switch just work if there is a char, int, byte, short, enum and string
         switch (day){
             case 1:
                 System.out.println("Sunday");
