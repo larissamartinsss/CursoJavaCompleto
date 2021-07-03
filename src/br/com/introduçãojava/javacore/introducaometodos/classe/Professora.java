@@ -7,11 +7,13 @@ public class Professora {
     public String cpf;
 
 
-    public void imprime(Professora aux){
+    public void imprime(){
         System.out.println("-----------");
-        System.out.println(aux.cpf);
-        System.out.println(aux.matricula);
-        System.out.println(aux.nome);
-        System.out.println(aux.rg);
+        System.out.println(this.cpf);
+        System.out.println(this.matricula);
+        System.out.println(this.nome);
+        System.out.println(this.rg );
+
+        //this é usado p/ pegar os valores dentro do proprio objeto;
     }
 }

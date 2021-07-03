@@ -16,8 +16,9 @@ public class ProfessoraTest {
         prof2.nome = "Mariana";
         prof2.rg = "2004385-0";
 
-        prof.imprime(prof);
-        prof.imprime(prof2);
+        prof.imprime();
+        prof2.imprime();
+
 
     }
 

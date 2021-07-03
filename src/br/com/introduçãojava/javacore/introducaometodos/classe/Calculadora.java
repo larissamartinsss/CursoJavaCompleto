@@ -34,4 +34,24 @@ public class Calculadora {
 
     }
 
+    public void somaArray(int [] numeros){
+        int soma = 0;
+        for(int num : numeros){
+            soma += num;
+        }
+        System.out.println(soma);
+    }
+
+    public void somaVarArgs(int... numeros){
+        //VarArgs só pode ser utilizado uma vez por assinatura de método;
+        //O VarArgs passa tanto objetos do tipo Array como outros tipos;
+        // Caso queria adiconar mais paramentros, o VarArgs deve ser o último;
+        int soma = 0;
+        for(int num : numeros){
+            soma += num;
+        }
+        System.out.println(soma);
+
+    }
+
 }
