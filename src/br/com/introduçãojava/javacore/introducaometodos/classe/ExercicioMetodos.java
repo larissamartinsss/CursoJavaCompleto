@@ -36,6 +36,8 @@ public class ExercicioMetodos {
         }
     }
 
+    // getters and setters
+
     public void setNome(String nome) {
         this.nome = nome;
     }
