@@ -41,6 +41,10 @@ public class ExercicioMetodos {
     }
 
     public void setIdade(int idade) {
+        if (idade < 0) {
+            System.out.println("Você não pode fazer isso");
+            return;
+        }
         this.idade = idade;
     }
 
