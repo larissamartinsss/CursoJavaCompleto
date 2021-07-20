@@ -4,8 +4,8 @@ import br.com.introduçãojava.javacore.sobrecargasmetodos.classes.Funcionario;
 
 public class FuncionarioTest {
     public static void main(String[] args) {
-        Funcionario funcionario = new Funcionario("Souza");
-        funcionario.init("Larissa Martins", "034056966-44", 4500,"30054060");
+        Funcionario funcionario = new Funcionario("Souza", "034056966-44", 4500,"30054060");
+        //funcionario.init("Larissa Martins", "034056966-44", 4500,"30054060");
         funcionario.imprime();
     }
 }
