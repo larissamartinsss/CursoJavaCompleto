@@ -1,4 +1,4 @@
-package POO.Guanabara;
+package POO.Guanabara.aula02;
 
 public class CanetaMain {
     public static void main(String[] args) {
@@ -7,7 +7,9 @@ public class CanetaMain {
     c1.cor = "Azul";
     //c1.ponta = 0.5f
     c1.carga = 80;
-    c1.tampada = true;
+
+    c1.destampar();
     c1.status();
+    c1.rabiscar();
 }
 }

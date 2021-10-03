@@ -1,4 +1,4 @@
-package POO.Guanabara;
+package POO.Guanabara.aula02;
 // Exercicio sobre visibilidade:
 
 public class Caneta {
@@ -6,7 +6,7 @@ public class Caneta {
     public String cor;
     private float ponta;
     protected int carga;
-    protected boolean tampada;
+    private boolean tampada;
 
     public void status() {
         System.out.println("Modelo " + this.modelo);
@@ -24,7 +24,11 @@ public class Caneta {
         }
     }
 
-   protected void tampar() {
+   public void tampar() {
         this.tampada = true;
+    }
+
+    public void destampar() {
+        this.tampada = false;
     }
 }
