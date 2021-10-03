@@ -1,4 +1,4 @@
-package br.com.introduçãojava.javacore.introducaometodo.test.dominio;
+package br.com.introduçãojava.javacore.introducaoclasses.dominio;
 
 public class Pessoa {
     private String nome;
