@@ -54,14 +54,25 @@ public class ContaBanco {
         }
 
 
-    void pagarMensal(){
-        this.status = true;
-        if(this.tipo == "CC"){
-            double desconto = this.saldo-12;
-        }else{
-            double desconto = this.saldo-20;
+    void pagarMensal() {
+        double v = 0;
+        if (this.tipo == "CC") {
+            v = 12;
         }
-
+        else if (this.tipo == "CP"){
+                v = 20;
+            }
+        if(status = true){
+            if(saldo > v){
+                saldo = saldo - v;
+            }
+            else{
+                System.out.println("Saldo insuficiente");
+            }
+        }
+        else{
+            System.out.println("Impossivel pagar!");
+        }
     }
 
     public ContaBanco() {
