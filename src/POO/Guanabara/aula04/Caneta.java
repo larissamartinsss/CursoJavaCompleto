@@ -5,9 +5,15 @@ import jdk.swing.interop.SwingInterOpUtils;
 public class Caneta {
     public String modelo;
     private float ponta;
+    private String cor;
     boolean tampada;
 
-    public void Caneta() { // Este é o método construtor
+
+    public Caneta(String m, String c, float p) { // Este é o método construtor
+        this.modelo = m;
+        this.cor = c;
+        this.ponta = p;
+        this.tampar();
 
     }
 
@@ -39,5 +45,6 @@ public class Caneta {
         System.out.println("Ponta: "+ this.ponta);
 
     }
+
 
 }
