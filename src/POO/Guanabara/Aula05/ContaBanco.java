@@ -4,8 +4,19 @@ public class ContaBanco {
     public int numConta;
     protected String tipo;
     private String dono;
-    private double saldo, v;
+    private double saldo;
+    private double v;
     private boolean status;
+
+    public void estadoAtual(){
+        System.out.println("--------------------------------");
+        System.out.println("Conta: "+this.getNumConta());
+        System.out.println("Tipo: "+this.getTipo());
+        System.out.println("Dono: "+this.getDono());
+        System.out.println("Saldo: "+this.getSaldo());
+        System.out.println("Status: "+this.getStatus());
+        System.out.println("--------------------------------");
+    }
 
     void abrirConta(String t){
         setTipo(t);
@@ -32,7 +43,7 @@ public class ContaBanco {
         }
     }
 
-    void depositar(){
+    void depositar(int v){
         if(this.getStatus()){
             this.saldo = this.saldo + v;
             this.setSaldo(saldo);
@@ -65,17 +76,13 @@ public class ContaBanco {
         else if (this.getTipo() == "CP"){
                 v = 20;
             }
-        if(getStatus()){
-            if(saldo > v){
-                saldo = saldo - v;
-            }
+        if(getStatus()) {
+            this.setSaldo(this.getSaldo() - v);
+            System.out.println("Mensalidade paga com sucesso por: " + this.getDono());
+        }
             else{
-                System.out.println("Saldo insuficiente");
-            }
-        }
-        else{
-            System.out.println("Impossivel pagar!");
-        }
+                System.out.println("Impossivel pagar uma conta fechada! ");
+             }
     }
 
     public ContaBanco() {

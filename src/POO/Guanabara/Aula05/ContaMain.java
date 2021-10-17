@@ -12,10 +12,12 @@ public class ContaMain {
         p2.setDono("Lucas");
         p2.abrirConta("CP");
 
-        p1.depositar(100);
+        p1.depositar(1000);
         p2.depositar(500);
         p2.sacar(100);
 
+        p1.estadoAtual();
+        p2.estadoAtual();
 
     }
 }
