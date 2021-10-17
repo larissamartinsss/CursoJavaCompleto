@@ -7,17 +7,16 @@ public class ContaBanco {
     private double saldo, v;
     private boolean status;
 
-    void abirConta(String t){
+    void abrirConta(String t){
         setTipo(t);
         setStatus(true);
-
         this.status = true;
         if(t == "CC"){
             System.out.println("Parabéns! Você ganhou R$50,00!");
-            saldo = 50;
+            this.setSaldo(50);
         }else{
             System.out.println("Parabéns! Você ganhou R$150,00!");
-            saldo = 150;
+            this.setSaldo(150);
         }
         }
 
@@ -34,35 +33,39 @@ public class ContaBanco {
     }
 
     void depositar(){
-        if(this.status = true){
-            setSaldo(getSaldo() +v);
+        if(this.getStatus()){
+            this.saldo = this.saldo + v;
+            this.setSaldo(saldo);
+            System.out.println("Depósito realizado na conta de: "+this.getDono());
         }else{
             System.out.println("Impossivel depositar! ");
         }
 
     }
 
-    void sacar(){
-    if(this.status = true) {
-        if (getSaldo() > v) {
-            saldo = saldo - v;
+    void sacar(float v) {
+        if (this.getStatus()) {
+            if (this.getSaldo() >= v) {
+                this.setSaldo(this.getSaldo() - v);
+                System.out.println("Saque realizado na conta de: "+this.getDono());
+            } else {
+                System.out.println("Saldo insuficiente!");
+            }
         } else {
-            System.out.println("Saldo insuficiente!");
+            System.out.println("Impossivel sacar! Saldo insuficiente ");
         }
-    }else
-        System.out.println("Impossivel sacar!  ");
-        }
+    }
 
 
     void pagarMensal() {
         double v = 0;
-        if (this.tipo == "CC") {
+        if (this.getTipo() == "CC") {
             v = 12;
         }
-        else if (this.tipo == "CP"){
+        else if (this.getTipo() == "CP"){
                 v = 20;
             }
-        if(status = true){
+        if(getStatus()){
             if(saldo > v){
                 saldo = saldo - v;
             }
