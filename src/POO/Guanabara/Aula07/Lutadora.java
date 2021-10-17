@@ -16,7 +16,7 @@ public class Lutadora {
         this.nacionalidade = nacionalidade;
         this.idade = idade;
         this.altura = altura;
-        this.peso = peso;
+        this.setPeso(peso);
         this.vitorias = vitorias;
         this.derrotas = derrotas;
         this.empates = empates;
@@ -90,13 +90,14 @@ public class Lutadora {
 
     public void setPeso(double peso) {
         this.peso = peso;
+        this.setCategoria();
     }
 
     public String getCategoria() {
         return categoria;
     }
 
-    private void setCategoria(String categoria) {
+    private void setCategoria() {
         if(getPeso() < 52.2){
             this.categoria = "Inválido";
         }else if(getPeso() <=70.3){
