@@ -7,9 +7,7 @@ public class Lutadora {
     private double altura;
     private double peso;
     private String categoria;
-    private int vitorias;
-    private int derrotas;
-    private int empates;
+    private int vitorias, derrotas, empates;
 // Construtor
     public Lutadora(String nome, String nacionalidade, int idade, double altura,
                     double peso, int vitorias, int derrotas, int empates)
@@ -25,6 +23,7 @@ public class Lutadora {
     }
 
     public void apresentar(){
+        System.out.println("CHEGOU A HORA! Apresentamos: ");
         System.out.println("Lutadora: "+getNome());
         System.out.println("Origem: "+getNacionalidade());
         System.out.println(+getIdade()+" anos");
@@ -42,10 +41,13 @@ public class Lutadora {
         System.out.println(getDerrotas() + "derrotas");
     }
     public void ganharLuta(){
+        this.setVitorias(this.getVitorias()+1);
     }
     public void perderLuta(){
+        this.setVitorias(this.getVitorias()+1);
     }
     public void empatarLuta(){
+        this.setVitorias(this.getVitorias()+1);
     }
 
     // Metodos especiais:
