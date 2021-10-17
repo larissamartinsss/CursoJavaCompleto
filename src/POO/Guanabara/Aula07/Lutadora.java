@@ -1,6 +1,6 @@
 package POO.Guanabara.Aula07;
 
-public class Lutador {
+public class Lutadora {
     private String nome;
     private String nacionalidade;
     private int idade;
@@ -11,8 +11,8 @@ public class Lutador {
     private int derrotas;
     private int empates;
 // Construtor
-    public Lutador(String nome, String nacionalidade, int idade, double altura,
-                   double peso, int vitorias, int derrotas, int empates)
+    public Lutadora(String nome, String nacionalidade, int idade, double altura,
+                    double peso, int vitorias, int derrotas, int empates)
     {
         this.nome = nome;
         this.nacionalidade = nacionalidade;
@@ -25,9 +25,21 @@ public class Lutador {
     }
 
     public void apresentar(){
+        System.out.println("Lutadora: "+getNome());
+        System.out.println("Origem: "+getNacionalidade());
+        System.out.println(+getIdade()+" anos");
+        System.out.println(getAltura()+ "m de altura");
+        System.out.println("Pesando: "+getPeso()+"Kg");
+        System.out.println("Ganhou: "+getVitorias());
+        System.out.println("Perdeu: "+getDerrotas());
+        System.out.println("Empatou: "+getEmpates());
     }
 
     public void status(){
+        System.out.println(getNome());
+        System.out.println("É um peso "+getCategoria());
+        System.out.println(getVitorias() + "vitórias");
+        System.out.println(getDerrotas() + "derrotas");
     }
     public void ganharLuta(){
     }
